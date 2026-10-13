@@ -9,7 +9,7 @@ import jakarta.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/characters")
+@RequestMapping("/api")
 public class ASOIAFcharacterController {
     
     private final ASOIAFcharacterService service;
