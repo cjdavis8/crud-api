@@ -34,7 +34,6 @@ public class ASOIAFcharacterService {
     
     public ASOIAFcharacter findById(Long id) {
         return repository.findById(id).orElseThrow(() -> new ASOIAFcharacterNotFoundException(id));
-
     }
 
     public ASOIAFcharacter create(ASOIAFcharacter newChar) {

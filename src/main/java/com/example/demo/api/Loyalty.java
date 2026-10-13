@@ -1,5 +1,5 @@
 package com.example.demo.api;
 
 public enum Loyalty {
-    JOFFREY, RENLY, STANNIS, ROBB, BALON, NONE
+    JOFFREY, RENLY, STANNIS, ROBB, BALON, DAENERYS, NONE
 }

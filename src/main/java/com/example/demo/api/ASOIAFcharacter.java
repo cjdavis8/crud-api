@@ -12,7 +12,7 @@ import jakarta.validation.constraints.NotNull;
 @Table(name = "characters")
 public class ASOIAFcharacter {
     
-    @Id 
+    @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long characterId;
 
