@@ -52,6 +52,8 @@ public class ASOIAFcharacterService {
     public ASOIAFcharacter update(Long id, ASOIAFcharacter updated) {
         ASOIAFcharacter existing = findById(id);
         existing.setName(updated.getName());
+        existing.setSummary(updated.getSummary());
+        existing.setTitle(updated.getTitle());
         existing.setLoyalty(updated.getLoyalty());
         existing.setKnight(updated.isKnight());
         existing.setDescription(updated.getDescription());

@@ -34,7 +34,7 @@
         </div>
         
         <div class="col-sm">
-            <img src="resources/static/thumbnails/abtimg.jpg" class="card-img-top" alt="...">
+            <img src="/thumbnails/abtimg.jpg" class="card-img-top" alt="...">
             <p style="text-align:center">Daenerys and her dragons...</p>
     </div>
 </div>
