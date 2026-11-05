@@ -27,9 +27,6 @@
           <a class="nav-link" href="index.ftlh">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="details.ftlh">Details</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link active" href="about.ftlh">About</a>
         </li>
         <li class="nav-item">
