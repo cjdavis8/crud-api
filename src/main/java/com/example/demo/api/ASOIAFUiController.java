@@ -66,7 +66,7 @@ public class ASOIAFUiController {
     model.addAttribute("character", character);
     model.addAttribute("formTitle", "Edit character");
     model.addAttribute("formAction", "/characters/" + id);
-    return "character-form";
+    return "new-character-form";
   }
 
   @PostMapping("/characters/{id}")
