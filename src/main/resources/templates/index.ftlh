@@ -34,6 +34,7 @@
             <img src="/thumbnails/${(character.thumbnailUrl)!'character-placeholder.svg'}" alt="${character.name}" width="200"
               height="200">
           </a>
+          <h1>${character.name}</h1>
           <div class="card-body">
             <h5 class="card-title">${character.title}</h5>
                     <p class="card-text"> ${character.summary}</p>

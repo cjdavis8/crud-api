@@ -37,6 +37,12 @@
             <p> ${character.description}</p>
     </div>
 </div>
+    <div class="actions">
+          <a class="button" href="/characters/${character.id?c}/edit">Edit</a>
+            <form method="post" action="/plants/${character.id?c}/delete" onsubmit="return confirm('Remove this character?');">
+              <button type="submit" class="danger">Delete</button>
+            </form>
+        </div>
 <a href="/" class="btn back-button mb-4">← Back to Gallery</a>
 </div>
 
