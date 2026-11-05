@@ -1,0 +1,106 @@
+
+
+body{
+    background-color:rgb(222,222,255);
+    color:Black;
+    padding-top:0px;
+    padding-bottom:20px;
+    h1 {
+        text-align: center;
+        margin-bottom:30px;
+    }
+}
+
+
+.navbar {
+
+    margin-bottom: 20px;
+}
+
+.collapse{
+}
+
+.back-button{
+    background-color:black;
+    color:white;
+    --bs-btn-hover-color:rgb(222,222,222);
+    --bs-btn-hover-bg:rgb(55,55,55);
+    --bs-btn-hover-border-color:rgb(200,200,200);
+}
+
+.details-card{
+    width:20rem;
+    height:18rem;
+    background-color:rgb(255,200,200);
+    border-width:3px;
+    border-color: black;
+
+}
+
+.charform {
+    justify-content-center
+    width:33rem;
+    background-color:rgb(255,200,200);
+    .btn-danger {
+        --bs-btn-active-color:rgb(222,222,255);
+        --bs-btn-bg:rgb(222,222,255);
+        --bs-btn-color:black;
+        --bs-btn-hover-bg:rgb(255,255,255);
+        --bs-btn-hover-color:rgb(0,0,0);
+        --bs-btn-border-color:rgb(55,55,255);
+        --bs-btn-hover-border-color:rgb(55,55,255);
+    }
+
+}
+
+
+
+.char-card {
+    img:sizes;
+    img{
+        width:20rem;
+        height:20rem;
+        text-align:center;
+    }
+    height: 35rem;
+    width: 20.3rem;
+    margin-top: 30px;
+    background-color:rgb(255,200,200);
+    border-width:3px;
+    border-color: black;
+    h5{
+        font-weight: 600;
+        
+    }
+    p{
+        color:black;
+        border-color:black;
+        border-width:3px;
+    }
+    
+    btn-primary{
+        background-color:black;
+        color:black;
+    }
+    a{
+        
+        background-color:rgb(33,33,33);
+        border-color:white;
+        --bs-btn-hover-bg:rgb(55,55,55);
+        --bs-btn-hover-border-color:rgb(200,200,200);
+    }
+
+}
+
+
+.page-header{
+    margin-top:20px;
+    margin-bottom:30px;
+}
+.card-header {
+    h4{
+        text-align: center;
+        font-weight:bold;
+    }
+    background-color: 155,88,88;
+}
