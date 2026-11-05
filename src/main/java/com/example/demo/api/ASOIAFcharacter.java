@@ -20,6 +20,12 @@ public class ASOIAFcharacter {
     private String name;
 
     @NotNull 
+    private String title;
+
+    @NotNull 
+    private String summary;
+
+    @NotNull 
     private String description;
 
     @NotNull 
@@ -27,6 +33,8 @@ public class ASOIAFcharacter {
 
     @NotNull 
     private boolean knight;
+
+    private String thumbnailUrl;
 
     public Long getId() {
         return characterId;
@@ -38,6 +46,22 @@ public class ASOIAFcharacter {
 
     public void setName(String name){
         this.name = name;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getSummary() {
+        return summary;
+    }
+
+    public void setSummary(String summary) {
+        this.summary = summary;
     }
 
     public String getDescription() {
@@ -63,4 +87,15 @@ public class ASOIAFcharacter {
     public void setKnight(boolean knight) {
         this.knight = knight;
     }
+
+    
+    public String getThumbnailUrl() {
+        return thumbnailUrl;
+    }
+
+    public void setThumbnailUrl(String thumbnailUrl) {
+        this.thumbnailUrl = thumbnailUrl;
+
+    }
+
 }

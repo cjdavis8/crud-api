@@ -1,13 +1,22 @@
 package com.example.demo.api;
 
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.io.InputStream;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.file.Path;
+import java.nio.file.StandardCopyOption;
 import java.util.List;
+
 
 @Service
 public class ASOIAFcharacterService {
     
     private final ASOIAFrepository repository;
+
+    private static final String UPLOAD_DIR = "src/main/resources/static/thumbnails/";
 
     public ASOIAFcharacterService(ASOIAFrepository repository) {
         this.repository = repository;
@@ -52,5 +61,21 @@ public class ASOIAFcharacterService {
     public void delete(Long id) {
         findById(id);
         repository.deleteById(id);
+    }
+
+    public void saveThumbnail(ASOIAFcharacter character, MultipartFile file) {
+        String originalFileName = file.getOriginalFilename();
+        try {
+            String fileExtension = originalFileName.substring(originalFileName.lastIndexOf(".") + 1);
+            String newFileName = "character_" + character.getId() + "." + fileExtension;
+            Path path = Paths.get(UPLOAD_DIR + newFileName);
+            InputStream inputStream = file.getInputStream();
+            Files.createDirectories(Paths.get(UPLOAD_DIR)); // Ensure the directory exists
+            Files.copy(inputStream, path, StandardCopyOption.REPLACE_EXISTING);
+            character.setThumbnailUrl( newFileName);
+            repository.save(character);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
