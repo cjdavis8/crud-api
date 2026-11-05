@@ -70,11 +70,8 @@
                     <p class="card-text"> ${character.summary}</p>
                     <a href="/characters/${character.id}" class="btn btn-primary">Details</a>
 
-            </#if>
           </div>
         </article>
-        <#else>
-          <p class="empty">No characters found.</p>
       </#list>
     </div>
   </@l.page>
