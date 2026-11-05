@@ -43,7 +43,7 @@
               <button type="submit" class="btn btn-danger">Delete</button>
             </form>
         </div>
-<a href="/index" class="btn back-button mb-4">← Back to Gallery</a>
+<a href="/" class="btn back-button mb-4">← Back to Gallery</a>
 </div>
 
   </@l.page>

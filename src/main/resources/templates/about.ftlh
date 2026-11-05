@@ -28,7 +28,7 @@
         </p>
         </div>
         <div class="container-sm style=centered">
-    <a href="/index" class="btn back-button mb-4" style="text-align:center">← Back to Gallery</a>
+    <a href="/" class="btn back-button mb-4" style="text-align:center">← Back to Gallery</a>
 
 </div>
         </div>
