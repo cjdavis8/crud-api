@@ -72,7 +72,7 @@
 
                                 <div class="d-grid mt-3 gap-2 d-sm-flex justify-content-sm-start">
                                     <button type="submit" class="btn btn-danger">Add Character</button>
-                                    <a href="index.ftlh" class="btn btn-outline-secondary">Cancel</a>
+                                    <a href="/index" class="btn btn-outline-secondary">Cancel</a>
                                 </div>
                             </form>
                         </div>

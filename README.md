@@ -7,24 +7,27 @@ A RESTful crud api built for CSC340 assignment 3. Built with Spring Boot to trac
 |-------|------|-------|
 | `id` | Long | Generated automatically |
 | `name` | String | Required, not blank |
+| `title` | String | Required, not blank |
+| `summary` | String | Required, not blank |
+| `description` | String | Required, not blank |
 | `loyalty` | Enum: 'JOFFREY', 'RENLY', 'STANNIS', 'ROBB', 'BALON', 'DAENERYS', 'NONE' | Required |
 | `knight` | boolean | Required |
 
 # endpoints
 
-Base path: `/api`
+Base path: `/`
 
 | Method | Path | Description | Success |
 |--------|------|-------------|---------|
-| GET | `/api` | List all characters (supports filters below) | 200 |
-| GET | `/api/{id}` | Get one character | 200 |
-| POST | `/api/` | Create a character | 201 |
-| PUT | `/api/{id}` | Replace a character's fields | 200 |
-| DELETE | `/api/{id}` | Delete a character | 204 |
+| GET | `/index` | List all characters (supports filters below) | 200 |
+| GET | `/characters/{id}` | Get one character | 200 |
+| POST | `/characters/new/` | Create a character | 201 |
+| PUT | `/characters/{id}/edit` | Replace a character's fields | 200 |
+| DELETE | `/characters/{id}/delete` | Delete a character | 204 |
 
 ## link to deployed API
 
-https://crud-api-j5tl.onrender.com/api
+https://crud-api-j5tl.onrender.com/
 
 Note: free Render services sleep when idle, so the first request can take up to a minute. 
 
