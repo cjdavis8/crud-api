@@ -29,7 +29,7 @@
 
     <div class="grid">
       <#list characters as character>
-        <article class="card">
+        <article class="card char-card w-275 mb-3">
           <a href="/characters/${character.id?c}">
             <img src="/thumbnails/${(character.thumbnailUrl)!'character-placeholder.svg'}" alt="${character.name}" width="200"
               height="200">
