@@ -3,7 +3,7 @@
 
 
 <div class="page-header border-bottom">
-        <h1> ${form-title} </h1>
+        <h1> Character Add / Update </h1>
         </div>
         <div class="row justify-content-center">
                 <div class="col-sm-6">
