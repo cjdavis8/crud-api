@@ -3,7 +3,7 @@
 
 
 <div class="page-header border-bottom">
-        <h1> Add a New ASOIAF Character </h1>
+        <h1> ${form-title} </h1>
         </div>
         <div class="row justify-content-center">
                 <div class="col-sm-6">
@@ -14,7 +14,7 @@
                                 <div class="mb-3">
                                     <label for="characterName" class="form-label"><strong>Character Name
                                             *</strong></label>
-                                    <input type="text" id="characterName" name="name" placeholder="eg., Lem Lemoncloak" required="" class="form-control">
+                                    <input type="text" id="characterName" name="name" value="${(character.name)!'eg., Lem Lemoncloak'}" required="" class="form-control">
                                     <small class="form-text text-muted">The name of the character</small>
                                 </div>
 
@@ -35,7 +35,7 @@
 
                                 <div class="mb-3">
                                     <label for="imageUrl" class="form-label"><strong>Image URL *</strong></label>
-                                    <input type="url" id="imageUrl" name="imageUrl" placeholder="https://example.com/lemoncloak.jpg" required="" class="form-control">
+                                    <input type="url" id="imageUrl" name="imageUrl" value="${(character.thumbnailUrl)!'https://example.com/lemoncloak.jpg'}" required="" class="form-control">
                                     <small class="form-text text-muted">Link to a character image (must be a valid
                                         URL)</small>
                                 </div>
@@ -43,14 +43,14 @@
                                 <div class="mb-3">
                                     <label for="title" class="form-label"><strong>Title
                                             *</strong></label>
-                                    <textarea id="title" name="title" placeholder="Give the character a title (eg "king in the north)..." rows="3" required="" class="form-control"></textarea>
+                                    <textarea id="title" name="title" value="${(character.title)!'Give the character a title...'}" rows="3" required="" class="form-control"></textarea>
                                     <small class="form-text text-muted">A title for the character</small>
                                 </div>
 
                                 <div class="mb-3">
                                     <label for="summary" class="form-label"><strong>Summary
                                             *</strong></label>
-                                    <textarea id="summary" name="summary" placeholder="Describe the character in 1-2 sentences..." rows="3" required="" class="form-control"></textarea>
+                                    <textarea id="summary" name="summary" value="{$(character.summary)!'Describe the character in 1-2 sentences...'}" rows="3" required="" class="form-control"></textarea>
                                     <small class="form-text text-muted">A brief summary of the character (100-200
                                         characters)</small>
                                 </div>
@@ -58,7 +58,7 @@
                                 <div class="mb-3">
                                     <label for="description" class="form-label"><strong>Description
                                             *</strong></label>
-                                    <textarea id="description" name="description" placeholder="Describe the character in 1-2 paragraphs..." rows="3" required="" class="form-control"></textarea>
+                                    <textarea id="description" name="description" value="{$(character.description)!'Describe the character in 1-2 paragraphs...'}" rows="3" required="" class="form-control"></textarea>
                                     <small class="form-text text-muted">A longer description of the character.</small>
                                 </div>
 
