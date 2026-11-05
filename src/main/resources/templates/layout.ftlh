@@ -9,7 +9,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <title>ASOIAF Gallery - about</title>
   </head>
 
@@ -37,6 +37,13 @@
     </div>
   </div>
 </nav>
+    <main class="container">
+        <#-- A flash message survives exactly one redirect (see RedirectAttributes in the controller). -->
+          <#if message??>
+            <p class="alert">${message}</p>
+          </#if>
+          <#nested>
+      </main>
 
     </body>
 
