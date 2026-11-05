@@ -18,43 +18,26 @@
     <!--nav bar-->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="index.ftlh">ASOIAF Gallery</a>
+    <a class="navbar-brand" href="/">ASOIAF Gallery</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="index.ftlh">Home</a>
+          <a class="nav-link" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="about.ftlh">About</a>
+          <a class="nav-link active" href="/about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="new-character-form.ftlh">Add a Character</a>
+          <a class="nav-link" href="/characters/new">Add a Character</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
 
-    <body>
-      <header class="site-header">
-        <a class="brand" href="/">&#127807; ASOIAF Character Gallery</a>
-        <nav>
-          <a href="/" class="${(active == 'home')?then('active', '')}">Home</a>
-          <a href="/about" class="${(active == 'about')?then('active', '')}">About</a>
-          <a href="/characters/new" class="${(active == 'new')?then('active', '')}">Add a Character</a>
-        </nav>
-      </header>
-
-      <main class="container">
-        <#-- A flash message survives exactly one redirect (see RedirectAttributes in the controller). -->
-          <#if message??>
-            <p class="alert">${message}</p>
-          </#if>
-          <#nested>
-      </main>
     </body>
 
     </html>
