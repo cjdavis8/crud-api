@@ -34,9 +34,27 @@
           <a class="nav-link" href="/characters/new">Add a Character</a>
         </li>
       </ul>
+    <form method="get" action="/characters" class="search">
+      <input type="text" name="name" value="${name!''}" placeholder="Search by name">
+      <select name="loyalty">
+        <option value="">Any loyalty</option>
+        <option value="JOFFREY" <#if selectedLoyalty=='JOFFREY'>selected</#if>>Joffrey</option>
+        <option value="RENLY" <#if selectedLoyalty=='RENLY'>selected</#if>>Renly</option>
+        <option value="STANNIS" <#if selectedLoyalty=='STANNIS'>selected</#if>>Stannis</option>
+        <option value="ROBB" <#if selectedLoyalty=='ROBB'>selected</#if>>Rob</option>
+        <option value="BALON" <#if selectedLoyalty=='BALON'>selected</#if>>Balon</option>
+        <option value="DAENERYS" <#if selectedLoyalty=='DAENERYS'>selected</#if>>Daenerys</option>
+        <option value="NONE" <#if selectedLoyalty=='NONE'>selected</#if>>None</option>
+      </select>
+      <button type="submit">Search</button>
+      <#if name?has_content || selectedLoyalty?has_content>
+        <a href="/characters" class="clear">Clear</a>
+      </#if>
+    </form>
     </div>
   </div>
 </nav>
+
     <main class="container">
         <#-- A flash message survives exactly one redirect (see RedirectAttributes in the controller). -->
           <#if message??>
