@@ -19,7 +19,7 @@ Base path: `/`
 
 | Method | Path | Description | Success |
 |--------|------|-------------|---------|
-| GET | `/index` | List all characters (supports filters below) | 200 |
+| GET | `/` | List all characters (supports filters below) | 200 |
 | GET | `/characters/{id}` | Get one character | 200 |
 | POST | `/characters/new/` | Create a character | 201 |
 | PUT | `/characters/{id}/edit` | Replace a character's fields | 200 |
