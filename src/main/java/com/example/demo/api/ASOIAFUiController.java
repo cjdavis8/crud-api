@@ -22,7 +22,7 @@ public class ASOIAFUiController {
       Model model) {
     model.addAttribute("characters", service.search(name, loyalty));
     model.addAttribute("name", name == null ? "" : name);
-    model.addAttribute("selectedloyalty", loyalty == null ? "" : loyalty.name());
+    model.addAttribute("selectedLoyalty", loyalty == null ? "" : loyalty.name());
     return "index"; // templates/index.ftlh
   }
 
