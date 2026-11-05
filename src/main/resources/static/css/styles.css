@@ -38,7 +38,7 @@ body{
 }
 
 .charform {
-    justify-content-center
+    justify-content:center;
     width:33rem;
     background-color:rgb(255,200,200);
     .btn-danger {
