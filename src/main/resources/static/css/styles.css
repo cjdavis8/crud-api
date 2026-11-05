@@ -62,7 +62,7 @@ body{
 
 .char-card {
     flex: 0 1 260px;
-    height: 35rem;
+    height: 40rem;
     margin-top:0;
     background-color:rgb(255,200,200);
     border-width:3px;
